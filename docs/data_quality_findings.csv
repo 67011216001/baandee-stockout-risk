@@ -1,0 +1,4 @@
+id,issue,evidence,detected_by,rule,before,after,status
+Q1,รหัส SKU ผิดรูปแบบ,"SKU-KT-104, SKU-BD-220 ใน products/inventory/order_lines",regex ^SKU-\d{4}$,ทีมต้องตัดสินใจ (D6),ยังไม่ตรวจ,ยังไม่ตรวจ,ร่าง — A ยืนยัน
+Q2,วันที่รูปแบบปน,"orders.order_date มี 28/07/2026 และ 07/08/2026 (2 แถว)",regex ^\d{4}-\d{2}-\d{2}$,ถ้าตีความได้ชัดเจนให้แปลง ถ้ากำกวมให้กักกัน,ยังไม่ตรวจ,ยังไม่ตรวจ,ร่าง — A ยืนยัน
+Q3,หมวดสินค้าสะกดไม่ตรง,"Kitchen/kitchen, Bedding/bedding, Storage/storage, Bed room",ตรวจค่าไม่ซ้ำ,จัดเป็นหมวดมาตรฐานโดยมีตารางแมปที่บันทึกไว้,ยังไม่ตรวจ,ยังไม่ตรวจ,ร่าง — A ยืนยัน
